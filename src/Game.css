@@ -1,0 +1,166 @@
+:root {
+  --main-bg-color: #3f7bdb;
+  --main-board-color: #d18d68;
+}
+
+body {
+  background-color: #AAAAAA;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.Board {
+  display: inline-block;
+  padding: 20px 40px;
+  margin-top: 10%;
+  background-color: #7C481B;
+  position: relative;
+}
+
+.Right {
+  background-color: #DDDDDD;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.PreviousGuesses {
+  padding: 0 10px;
+}
+
+li.PreviousGuess {
+  display: block;
+  margin: 25px 0;
+  position: relative;
+}
+
+/*li.PreviousGuess::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+}*/
+
+
+li.PreviousGuess > ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li.PreviousGuess ul.codePawns {
+  margin-right: 25px;
+}
+
+li.PreviousGuess ul.keyPawns {
+  width: 100px;
+  text-align: left;
+}
+
+.pawn {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.pawn.null {
+  background-color: #452200;
+}
+
+.currentGuess {
+  text-align: left;
+  padding: 15px 10px 10px;
+  margin-bottom: 25px;
+  position: relative;
+  border : 2px solid black;
+}
+
+.currentGuess > ul {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.currentGuess .pawn {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  color:white;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  cursor: pointer;
+}
+
+button.submitGuess {
+  background-color: #219F86;
+}
+
+button.submitGuess:disabled {
+  background: #999999;
+}
+
+button.resetGame {
+  background-color: #3a9069;
+  position: relative;
+  left: 35px;
+}
+
+.pawn.code {
+  width: 30px;
+  height: 30px;
+}
+
+.pawn.key {
+  width: 15px;
+  height: 15px;
+  margin: 2px 3px;
+  display: none;
+}
+
+.white, .pawn.correct {
+  background: #fffef9;
+  display: inline-block;
+}
+
+.rouge, .pawn.inPlace {
+  background: #FF0000;
+  display: inline-block;
+}
+
+.bleu {
+  background: #002CBD;
+}
+
+.vert {
+  background: #008D00;
+}
+
+.jaune {
+  background: #FED400;
+}
+
+.violet {
+  background: #B200B2;
+}
+
+.noir {
+  background: #000000;
+}
